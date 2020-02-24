@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard &raquo; </title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+  <!-- Font awesome CDN files-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Demo Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.js" type="text/javascript"></script>
+  <script>
+    Holder.addTheme("white", {
+      bg: "#fff",
+      fg: "#a7a7a7",
+      size: 10
+    });
+  </script>
+
+  <!-- keen-analysis@3 -->
+  <script src="https://cdn.jsdelivr.net/npm/keen-analysis@3/dist/keen-analysis.min.js" type="text/javascript"></script>
+
+  <!-- keen-dataviz@3 -->
+  <link href="https://cdn.jsdelivr.net/npm/keen-dataviz@3/dist/keen-dataviz.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/keen-dataviz@3/dist/keen-dataviz.min.js" type="text/javascript"></script>
+
+  <!-- Dashboard -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/keen-dashboards.css" />
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body class="keen-dashboard">
+
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-collapse">
+        <ul class="navbar-nav nav main-nav">
+          <li><a href="#quote">Quote</a></li>
+          <li><a href="#weather">Weather</a></li>
+          <li><a href="#aqi">AQI</a></li>
+          <li><a href="#dnt">Date and Time</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#image">Image of the Day</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+          <li><a href="https://mail.google.com" target="_blank">Gmail</a></li>
+          <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
+          <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+<section>
+    <div class="container grid grid-hero-bar">
+
+      <div class="chart-wrapper" id="quote">
+        <div class="chart-title" style="font-size: x-large;">
+          Google Search: 
+        </div>
+        <div class="chart-stage">
+          <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+            <input name="sitesearch" type="hidden">
+            <input autocomplete="on" class="form-control search" name="q" required="required"
+              type="text" placeholder="Enter the search query: ">
+            <button class="button" type="submit" style="color: white; font-size: medium;">Search</button>
+          </form>
+        </div>
+      
+      </div>
+
+      <div class="chart-wrapper" id="quote">
+        <div class="chart-title" style="font-size: x-large;">
+          Quote of the day
+        </div>
+        <div class="chart-stage">
+          <div id="Qtime_div" style="color: white; font-size: large;">
+    
+          </div>
+          <div id="Qist_div" style="color: white; font-size: medium;">
+    
+          </div>
+        </div>
+    
+      </div>
+      <div class="chart-wrapper" id="weather">
+        <div class="chart-title" style="font-size: large;">
+          Weather
+        </div>
+        <div class="chart-stage" style="color: white;">
+          <div class="input">
+            <input type="text" placeholder="Enter the city" class="input_text" style="color: white; font-size: medium;">
+            <input type="submit" value="Submit" class="submit" style="color: white;font-size: medium;">
+          </div>
+          <div class="display" style="color: white; font-size: large;">
+    
+            <p class="name" style="color: white;"></p>
+            <p class="temp"></p>
+            <p class="clouds"></p>
+            <p class="desc"></p>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="chart-wrapper" style="font-size: large;" id="aqi">
+        <div class="chart-title" style="font-size: large;">
+          AQI
+        </div>
+        <div class="chart-stage">
+          <div id="icon_div">
+    
+          </div>
+    
+          <div id="aist_div">
+    
+          </div>
+    
+          <div id="atime_div" style="color: white;">
+    
+          </div>
+    
+        </div>
+    
+      </div>
+      <div class="chart-wrapper" id="dnt">
+        <div class="chart-title" style="font-size: large;">
+          Date and Time
+        </div>
+        <div class="chart-stage">
+          <div id="time_div" style="color: white; font-size: large;">
+    
+          </div>
+          <div id="ist_div" style="color: white; font-size: large;">
+    
+          </div>
+        </div>
+    
+      </div>
+      <div class="chart-wrapper" id="news">
+        <div class="chart-title" style="font-size: large;">
+          News
+        </div>
+        <div class="chart-stage">
+          <form>
+            <label style="color: white; font-size: medium;">Press the button</label>
+            <input id="searchSubmit" type="submit" value="Latest News" style="color: white; font-size: medium;"></input>
+          </form>
+          <div id=results style="color: white;"></div>
+    
+    
+        </div>
+    
+      </div>
+    
+      <div class="chart-wrapper" id="image">
+        <div class="chart-title" style="font-size: large;">
+          Image of the day
+        </div>
+        <div class="chart-stage">
+          <div id="pist_div">
+    
+          </div>
+        </div>
+    
+      </div>
+      <div class="chart-wrapper" id="calendar">
+        <div class="chart-title" style="font-size: large;">
+          Calendar (Currently not working)
+        </div>
+        <div class="chart-stage">
+          <!--Add buttons to initiate auth sequence and sign out-->
+          <button id="authorize_button" style="display: none; color: white;">Authorize</button>
+          <button id="signout_button" style="display: none; color:white;">Sign Out</button>
+    
+          <pre id="content" style="white-space: pre-wrap; color: white;"></pre>
+    
+        </div>
+    
+      </div>
+    
+    
+    
+    
+    </div>
+</section>
+
+<section>
+  <div>
+    <h2 style="color: white; font-size: large; text-align: right; letter-spacing: 1px;">
+      Made by: Japneet Singh and Kshitij Alwadhi<br> as a part of Hackathon-2020 conducted by Dev Club - IITD.
+    </h2>
+
+  </div>
+</section>
+
+<p style="font-size: x-large;">Built by</p>
+
+
+  <!-- Project Analytics -->
+
+
+
+  <script type="text/javascript" src="../../assets/js/keen-analytics.js"></script>
+  <script type="text/javascript" src="../../assets/js/aqi.js"></script>
+  <script type="text/javascript" src="../../assets/js/calendar.js"></script>
+  <script type="text/javascript" src="../../assets/js/weather.js"></script>
+  <script type="text/javascript" src="../../assets/js/news.js"></script>
+  <script type="text/javascript" src="../../assets/js/script_date.js"></script>
+  <script type="text/javascript" src="../../assets/js/q.js"></script>
+  <script type="text/javascript" src="../../assets/js/pic.js"></script>
+  <script>
+    function toggleMenu() {
+      const toggleBtn = document.querySelector('.navbar-toggle');
+
+      toggleBtn.addEventListener('click', (e) => {
+        let menu;
+        if (e.currentTarget.dataset.target) {
+          menu = document.querySelector(e.currentTarget.dataset.target);
+        }
+        if (menu) menu.classList.toggle('collapsed');
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', toggleMenu);
+
+  </script>
+  <script src="/js/smoothscroll.js" type="text/javascript"></script>
+      <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+    onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

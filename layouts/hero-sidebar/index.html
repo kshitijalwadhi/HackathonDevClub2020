@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Layouts &raquo; Hero bar</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+  <!-- Font awesome CDN files-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Demo Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.js" type="text/javascript"></script>
+  <script>
+    Holder.addTheme("white", {
+      bg: "#fff",
+      fg: "#a7a7a7",
+      size: 10
+    });
+  </script>
+
+  <!-- keen-analysis@3 -->
+  <script src="https://cdn.jsdelivr.net/npm/keen-analysis@3/dist/keen-analysis.min.js" type="text/javascript"></script>
+
+  <!-- keen-dataviz@3 -->
+  <link href="https://cdn.jsdelivr.net/npm/keen-dataviz@3/dist/keen-dataviz.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/keen-dataviz@3/dist/keen-dataviz.min.js" type="text/javascript"></script>
+
+  <!-- Dashboard -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/keen-dashboards.css" />
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body class="keen-dashboard">
+
+  <div class="container">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-collapse">
+        <ul class="navbar-nav nav main-nav">
+          <li><a href="#">Quote</a></li>
+          <li><a href="#">Weather</a></li>
+          <li><a href="#">AQI</a></li>
+          <li><a href="#">Date and Time</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Image of the Day</a></li>
+          <li><a href="#">Calendar</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container grid grid-hero-bar">
+
+    <div class="chart-wrapper">
+      <div class="chart-title">
+        Quote of the day
+      </div>
+      <div class="chart-stage">
+        <div id="Qtime_div" style="color: white;">
+
+        </div>
+        <div id="Qist_div" style="color: white;">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="chart-wrapper">
+      <div class="chart-title">
+        Weather
+      </div>
+      <div class="chart-stage" style="color: white;">
+        <div class="input">
+          <input type="text" placeholder="Enter the city" class="input_text" style="color: white;">
+          <input type="submit" value="Submit" class="submit" style="color: white;">
+        </div>
+        <div class="display" style="color: white;">
+
+          <p class="name" style="color: white;"></p>
+          <p class="temp"></p>
+          <p class="clouds"></p>
+          <p class="desc"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="chart-wrapper">
+      <div class="chart-title">
+        AQI
+      </div>
+      <div class="chart-stage">
+        <div id="icon_div">
+
+        </div>
+
+        <div id="aist_div">
+
+        </div>
+
+        <div id="atime_div" style="color: white;">
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="chart-wrapper">
+      <div class="chart-title">
+        Date and Time
+      </div>
+      <div class="chart-stage">
+        <div id="time_div" style="color: white;">
+
+        </div>
+        <div id="ist_div" style="color: white;">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="chart-wrapper">
+      <div class="chart-title">
+        News
+      </div>
+      <div class="chart-stage">
+        <form>
+          <label style="color: white; font-size: small;">Press the button</label>
+          <input id="searchSubmit" type="submit" value="Latest News" style="color: white;"></input>
+        </form>
+        <div id=results style="color: white;"></div>
+
+
+      </div>
+
+    </div>
+
+    <div class="chart-wrapper">
+      <div class="chart-title">
+        Image of the day
+      </div>
+      <div class="chart-stage">
+        <div id="pist_div">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="chart-wrapper">
+      <div class="chart-title">
+        Calendar
+      </div>
+      <div class="chart-stage">
+        <!--Add buttons to initiate auth sequence and sign out-->
+        <button id="authorize_button" style="display: none; color: white;">Authorize</button>
+        <button id="signout_button" style="display: none; color:white;">Sign Out</button>
+
+        <pre id="content" style="white-space: pre-wrap; color: white;"></pre>
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <!-- Project Analytics -->
+
+
+
+  <script type="text/javascript" src="../../assets/js/keen-analytics.js"></script>
+  <script type="text/javascript" src="../../assets/js/aqi.js"></script>
+  <script type="text/javascript" src="../../assets/js/calendar.js"></script>
+  <script type="text/javascript" src="../../assets/js/weather.js"></script>
+  <script type="text/javascript" src="../../assets/js/news.js"></script>
+  <script type="text/javascript" src="../../assets/js/script_date.js"></script>
+  <script type="text/javascript" src="../../assets/js/q.js"></script>
+  <script type="text/javascript" src="../../assets/js/pic.js"></script>
+  <script>
+    function toggleMenu() {
+      const toggleBtn = document.querySelector('.navbar-toggle');
+
+      toggleBtn.addEventListener('click', (e) => {
+        let menu;
+        if (e.currentTarget.dataset.target) {
+          menu = document.querySelector(e.currentTarget.dataset.target);
+        }
+        if (menu) menu.classList.toggle('collapsed');
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', toggleMenu);
+
+  </script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+    onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>

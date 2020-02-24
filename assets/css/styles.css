@@ -1,0 +1,167 @@
+* {
+    padding: 0px ;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: blue;
+}
+
+form, .newsBlock {
+    margin: 20px;
+}
+
+.title, .author, .description, .image {
+    margin: 5px;
+}
+
+.searchSubmit {
+    color: #fff;
+}
+
+.headfoot {
+    padding: 10px;
+    background-color: #FF0000;
+}
+
+h2 {
+    padding: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #0000FF;
+}
+
+.image {
+    width: 300px;
+}
+
+#searchSubmit {
+    margin: 10px;
+}
+
+/* Narrow Desktop Styles */ 
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    #mainInfo {
+        display: flex;
+    }
+
+    #cityInfo {
+        margin: 0px;
+        margin-left: 30px;
+    }
+    
+    #forecastList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Medium Desktop Styles */
+@media only screen and (min-width: 1001px) and (max-width: 1500px) {
+    #mainInfo {
+        display: flex;
+    }
+
+    #cityInfo {
+        margin: 0px;
+        margin-left: 30px;
+    }
+    
+    #forecastList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Large Wide Desktop Sytles */
+@media only screen and (min-width: 1501px) {
+    #mainInfo {
+        display: flex;
+    }
+
+    #cityInfo {
+        margin: 0px;
+        margin-left: 30px;
+    }
+    
+    #forecastList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* ===================================================================*/
+/* Navbar starts */
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 20px 0px;
+    background-color: #0f002f !important;
+    border-bottom: none !important;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.navbar ul li a {
+    color: white !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease-in;
+
+}
+
+.navbar ul li a:hover, .navbar ul li a:focus 
+{
+    color: deepskyblue !important;
+}
+
+.navbar-toggle {
+    border: 1px solid white !important;
+    transition: all 0.2s ease-in;
+}
+
+.navbar-toggle:hover {
+    background-color: turquoise !important;
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: transparent !important;
+
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-inverse {
+    background-color: transparent !important;
+} */
+
+/* Navbar ends */
+
+/* ===================================================================*/
+
+
+.aist_div {
+    height: 20%;
+    width: 20%;
+}
