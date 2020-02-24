@@ -1,5 +1,9 @@
 # QuickDash, The world at a glance
 
+## Steps to run:
+
+1) Start live server on VS Code (after opening the directory) or any other alternative.
+2) Profit !!
 
 ## Public APIs used:
 
