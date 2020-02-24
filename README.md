@@ -47,3 +47,10 @@ Getting World Time Data for various time zones, with an option to use users loca
 
 ## 9) Keen Dashboards
 Flexbox based UI Template for the dashboard, used as a starter kit.
+
+---
+## Screenshots:
+
+![IMG1](./Screenshots/img1.png "img1")
+
+![IMG2](./Screenshots/img2.png "img2")
