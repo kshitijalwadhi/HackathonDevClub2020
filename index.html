@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Dashboard &raquo; </title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
 
   <!-- Latest compiled and minified CSS -->
@@ -51,8 +52,9 @@
           <li><a href="#weather">Weather</a></li>
           <li><a href="#aqi">AQI</a></li>
           <li><a href="#dnt">Date and Time</a></li>
+          <li><a href="#cric">Cricket</a></li>
           <li><a href="#news">News</a></li>
-          <li><a href="#image">Image of the Day</a></li>
+          <li><a href="#map" style="font-size:x-large;">Maps</a></li>
           <li><a href="#calendar">Calendar</a></li>
           <li><a href="https://mail.google.com" target="_blank">Gmail</a></li>
           <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
@@ -75,7 +77,7 @@
           <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
             <input name="sitesearch" type="hidden">
             <input autocomplete="on" class="form-control search" name="q" required="required"
-              type="text" placeholder="Enter the search query: ">
+              type="text" placeholder="Enter the search query: " style="color: white;">
             <button class="button" type="submit" style="color: white; font-size: medium;">Search</button>
           </form>
         </div>
@@ -133,7 +135,7 @@
     
           </div>
           <div style="color: white;">
-            Unhealthy, wear a mask outdoors.
+            Its unhealthy, prefer wearing a mask outdoors.
           </div>
     
         </div>
@@ -153,6 +155,25 @@
         </div>
     
       </div>
+
+      <div class="chart-wrapper" id="cric">
+        <div class="chart-title" style="font-size: large;">
+          Cricket Scores
+        </div>
+        <div class="chart-stage">
+          <div id="cicon_div" style="color: white;font-size: large;">
+            Currently no match live. Results of last match: 
+          </div>
+          <div id="ctime_div" style="color: white;font-size: large;">
+          
+          </div>
+          <div id="cist_div" style="color: white;font-size: large;">
+          
+          </div>
+        </div>
+      
+      </div>
+
       <div class="chart-wrapper" id="news">
         <div class="chart-title" style="font-size: large;">
           News
@@ -169,6 +190,20 @@
     
       </div>
     
+      <div class="chart-wrapper" id="map">
+        <div class="chart-title" style="font-size: large;">
+          Map
+        </div>
+        <div class="chart-stage"> 
+          <a href="map.html" style="color:skyblue;" target="_blank">Click here for Maps and Traffic info nearby</a>
+          
+        </div>
+        <div class="chart-stage">
+          <a href="dirn.html" style="color:skyblue;" target="_blank">Click here for Driving Directions to home</a>
+        
+        </div>
+      
+      </div>
       <div class="chart-wrapper" id="image">
         <div class="chart-title" style="font-size: large;">
           Image of the day
@@ -225,6 +260,9 @@
   <script type="text/javascript" src="../../assets/js/script_date.js"></script>
   <script type="text/javascript" src="../../assets/js/q.js"></script>
   <script type="text/javascript" src="../../assets/js/pic.js"></script>
+  <script type="text/javascript" src="../../assets/js/cric.js"></script>
+
+  
   <script>
     function toggleMenu() {
       const toggleBtn = document.querySelector('.navbar-toggle');

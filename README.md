@@ -60,6 +60,16 @@ Getting World Time Data for various time zones, with an option to use users loca
 ## 9) Keen Dashboards
 Flexbox based UI Template for the dashboard, used as a starter kit.
 
+## 10) Cric API
+https://www.cricapi.com/
+
+Getting the live scores of cricket matches (when available) and the results of last match in case of no ongoing matches.
+
+## 11) Bing Maps API
+https://bing.com/api/maps
+
+Getting Maps / Driving Directions / Traffic Info from Campus to home.
+
 ---
 ## Screenshots:
 

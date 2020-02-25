@@ -169,7 +169,7 @@ small,
 
 .nav-brand {
   padding: 15px;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 20px;
   text-decoration: none;
   color: #777777;
@@ -338,7 +338,7 @@ small,
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav > li > a {
   color: #777;
-  font-size: x-large;
+  font-size: 22px;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -701,7 +701,7 @@ button {
 
 .keen-dashboard .chart-wrapper .chart-title {
   border-bottom: 1px solid #d7d7d7;
-  color: #666;
+  color: #c7efcf;
   font-size: 14px;
   font-weight: 200;
   padding: 7px 10px 4px;
